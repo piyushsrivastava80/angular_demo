@@ -1,10 +1,10 @@
 pipeline {
    agent none
   environment{
-      BUILD_SERVER_IP='ec2-user@13.232.168.255'
+      BUILD_SERVER_IP='ec2-user@13.233.112.124'
     //    IMAGE_NAME='devopstrainer/java-mvn-privaterepos:php$BUILD_NUMBER'
        IMAGE_NAME='piyush792/project1:php$BUILD_NUMBER'
-       DEPLOY_SERVER_IP='ec2-user@3.6.90.245'
+       DEPLOY_SERVER_IP='ec2-user@3.111.217.164'
    }
     stages {
         stage('BUILD DOCKERIMAGE AND PUSH TO DOCKERHUB') {
