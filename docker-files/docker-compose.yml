@@ -7,7 +7,7 @@ services:
     depends_on:
       - mysql
   mysql:
-    image: piyush792/project1:mysql
+    image: mysql:5.7
     volumes:
       - db_data:/var/lib/mysql
     environment:
